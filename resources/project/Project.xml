@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project MetadataType="monolithic">
+    <Categories Location="Root">
+        <Category Location="FileClassCategory">
+            <Label Location="other">
+                <Info Name="Other" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="artifact">
+                <Info Name="Artifact" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="none">
+                <Info Name="None" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="test">
+                <Info Name="Test" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="convenience">
+                <Info Name="Convenience" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="design">
+                <Info Name="Design" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Info DataType="None" Name="Classification" ReadOnly="1" SingleValued="1"/>
+            <Label Location="derived">
+                <Info Name="Derived" ReadOnly="READ_ONLY"/>
+            </Label>
+        </Category>
+    </Categories>
+    <Files Location="Root">
+        <File Location=".gitattributes">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="other"/>
+                </Category>
+            </Info>
+        </File>
+        <File Location=".gitignore">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="other"/>
+                </Category>
+            </Info>
+        </File>
+        <File Location="main">
+            <Info/>
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location="code">
+                <Info/>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="DotEnvLoader.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="+dotenv">
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <Info/>
+                    <File Location="load.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="read.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                </File>
+            </File>
+            <File Location="dotenv.prj">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="artifact"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="doc">
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <Info/>
+                <File Location="GettingStarted.mlx">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+            </File>
+            <File Location="img">
+                <Info/>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="dotenv.png">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="artifact"/>
+                        </Category>
+                    </Info>
+                </File>
+            </File>
+        </File>
+        <File Location="README.md">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="derived"/>
+                </Category>
+            </Info>
+        </File>
+        <File Location="dev">
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <Info/>
+            <File Location="genDoc.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="convenience"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="packToolbox.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="convenience"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="publishToolbox.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="convenience"/>
+                    </Category>
+                </Info>
+            </File>
+        </File>
+        <File Location="LICENSE">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="other"/>
+                </Category>
+            </Info>
+        </File>
+        <File Location="installer">
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location="installweb.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="convenience"/>
+                    </Category>
+                </Info>
+            </File>
+            <Info/>
+        </File>
+    </Files>
+    <Info Location="ProjectData">
+        <Info Name="matlab-dotenv"/>
+    </Info>
+    <ProjectData Location="Root"/>
+    <Extensions Location="Root"/>
+    <EntryPoints Location="Root">
+        <EntryPoint Location="9dcc23ac-92d6-4032-b217-32e207691411">
+            <Info File="dev/genDoc.m" Icon="" Name="Generate README"
+                Type="Basic" Visible="1"/>
+        </EntryPoint>
+        <EntryPoint Location="362f42b7-045c-435b-8e09-6b60eaf85544">
+            <Info File="dev/packToolbox.m" Icon="" Name="Pack Toolbox"
+                Type="Basic" Visible="1"/>
+        </EntryPoint>
+        <EntryPoint Location="7dd35b93-7551-4757-8a9f-0a6dd127e03a">
+            <Info File="dev/publishToolbox.m" Icon=""
+                Name="Publish Toolbox" Type="Basic" Visible="1"/>
+        </EntryPoint>
+    </EntryPoints>
+    <ProjectPath Location="Root">
+        <Reference Location="39c17aac-9584-430a-8da8-d5bf71edd856">
+            <Info Ref="main/code" Type="Relative"/>
+        </Reference>
+        <Reference Location="d1dfeaa7-9c32-4e3f-b12b-1d19fe4b95ce">
+            <Info Ref="dev" Type="Relative"/>
+        </Reference>
+    </ProjectPath>
+    <Root Location="Extensions">
+        <Extension Location="Information">
+            <Info description="Load environment variables from .env file"/>
+        </Extension>
+    </Root>
+</project>
