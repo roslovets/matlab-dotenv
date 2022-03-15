@@ -6,6 +6,23 @@ Load environment variables from .env file
 
 Use .env files to store sensitive parameters like passwords, tokens, API keys etc. This tool allows you to automatically load all environment variables from `.env` file stored in current folder.
 
+## Installation
+### Approach 1 (easy and fast)
+
+Execute in MATLAB:
+
+```matlab:Code(Display)
+eval(webread('https://raw.githubusercontent.com/roslovets/matlab-dotenv/main/installer/installweb.m'))
+```
+
+### Approach 2 (manual)
+
+Use **Add-Ons Explorer** in MATLAB to find and install **matlab-dotenv**.
+
+### Approach 3 (offline)
+
+Download **matlab-dotenv.mltbx** from the [latest release](https://github.com/roslovets/matlab-dotenv/releases) and open it in MATLAB.
+
 ## Load environment variables
 
 Use `dotenv.load` function to load environment variables from `.env` file.
